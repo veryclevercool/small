@@ -16,7 +16,7 @@ spec:
       - image: okteto.dev/goo:latest
         name: goo
         ports:
-        - containerPort: 8080
+        - containerPort: 80
         env:
         - name: PORT
           value: "8080"
