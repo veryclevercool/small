@@ -1,13 +1,13 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: goo
+  name: soo
   annotations:
     dev.okteto.com/auto-ingress: "true"
 spec:
   type: ClusterIP  
   ports:
-  - name: "goo"
+  - name: "soo"
     port: 80
   selector:
-    app: goo
+    app: soo
