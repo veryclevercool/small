@@ -1,25 +1,25 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: goo
+  name: soo
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: goo
+      app: soo
   template:
     metadata:
       labels:
-        app: goo
+        app: soo
     spec:
       containers:
-      - image: okteto.dev/goo:latest
-        name: goo
+      - image: okteto.dev/soo:latest
+        name: soo
         ports:
         - containerPort: 80
         env:
         - name: PORT
-          value: "8080"
+          value: "80"
         - name: ProxySite
           value: "icook.tw"
         - name: Vless_UUID
