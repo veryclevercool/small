@@ -19,7 +19,7 @@ spec:
         - containerPort: 80
         env:
         - name: PORT
-          value: "8080"
+          value: "80"
         - name: ProxySite
           value: "mirror.umd.edu"
         - name: Vless_UUID
