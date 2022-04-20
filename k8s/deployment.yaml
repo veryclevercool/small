@@ -21,7 +21,7 @@ spec:
         - name: PORT
           value: "8080"
         - name: ProxySite
-          value: "moviesjoy.to"
+          value: "www.vecteezy.com"
         - name: Vless_UUID
           value: "ed0251a3-1f5d-464d-9332-21d0ac2fafa7"
         - name: Vless_Path
