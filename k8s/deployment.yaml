@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: ray
+  name: goo
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: ray
+      app: goo
   template:
     metadata:
       labels:
-        app: ray
+        app: goo
     spec:
       containers:
-      - image: okteto.dev/ray:latest
-        name: ray
+      - image: okteto.dev/goo:latest
+        name: goo
         ports:
         - containerPort: 8080
         env:
@@ -23,12 +23,12 @@ spec:
         - name: ProxySite
           value: ""
         - name: Vless_UUID
-          value: "273d7707-9bb1-44ff-b24c-b59876344cac"
+          value: "ed0251a3-1f5d-464d-9332-21d0ac2fafa7"
         - name: Vless_Path
-          value: "/s233"
+          value: "/s233Smm"
         - name: Vmess_UUID
-          value: "273d7707-9bb1-44ff-b24c-b59876344cac"
+          value: "ed0251a3-1f5d-464d-9332-21d0ac2fafa7"
         - name: Vmess_Path
-          value: "/s244"
+          value: "/s244Smm"
         - name: Share_Path
           value: "/share233"
